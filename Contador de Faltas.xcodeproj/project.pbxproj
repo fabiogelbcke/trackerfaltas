@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C84D0FD318B227720020A0A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FD218B227720020A0A3 /* Foundation.framework */; };
+		C84D0FD518B227720020A0A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FD418B227720020A0A3 /* CoreGraphics.framework */; };
+		C84D0FD718B227720020A0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FD618B227720020A0A3 /* UIKit.framework */; };
+		C84D0FDD18B227720020A0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FDB18B227720020A0A3 /* InfoPlist.strings */; };
+		C84D0FDF18B227720020A0A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D0FDE18B227720020A0A3 /* main.m */; };
+		C84D0FE318B227720020A0A3 /* ContaFaltasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D0FE218B227720020A0A3 /* ContaFaltasAppDelegate.m */; };
+		C84D0FE618B227730020A0A3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FE418B227730020A0A3 /* Main_iPhone.storyboard */; };
+		C84D0FE918B227730020A0A3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FE718B227730020A0A3 /* Main_iPad.storyboard */; };
+		C84D0FEC18B227730020A0A3 /* ContaFaltasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D0FEB18B227730020A0A3 /* ContaFaltasViewController.m */; };
+		C84D0FEE18B227730020A0A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FED18B227730020A0A3 /* Images.xcassets */; };
+		C84D0FF518B227740020A0A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FF418B227740020A0A3 /* XCTest.framework */; };
+		C84D0FF618B227740020A0A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FD218B227720020A0A3 /* Foundation.framework */; };
+		C84D0FF718B227740020A0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FD618B227720020A0A3 /* UIKit.framework */; };
+		C84D0FFF18B227740020A0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FFD18B227740020A0A3 /* InfoPlist.strings */; };
+		C84D100118B227740020A0A3 /* Contador_de_FaltasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D100018B227740020A0A3 /* Contador_de_FaltasTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C84D0FF818B227740020A0A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84D0FC718B227710020A0A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C84D0FCE18B227710020A0A3;
+			remoteInfo = "Contador de Faltas";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C84D0FCF18B227720020A0A3 /* Contador de Faltas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contador de Faltas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84D0FD218B227720020A0A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C84D0FD418B227720020A0A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C84D0FD618B227720020A0A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C84D0FDA18B227720020A0A3 /* Contador de Faltas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Contador de Faltas-Info.plist"; sourceTree = "<group>"; };
+		C84D0FDC18B227720020A0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C84D0FDE18B227720020A0A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C84D0FE018B227720020A0A3 /* Contador de Faltas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contador de Faltas-Prefix.pch"; sourceTree = "<group>"; };
+		C84D0FE118B227720020A0A3 /* ContaFaltasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContaFaltasAppDelegate.h; sourceTree = "<group>"; };
+		C84D0FE218B227720020A0A3 /* ContaFaltasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContaFaltasAppDelegate.m; sourceTree = "<group>"; };
+		C84D0FE518B227730020A0A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C84D0FE818B227730020A0A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C84D0FEA18B227730020A0A3 /* ContaFaltasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContaFaltasViewController.h; sourceTree = "<group>"; };
+		C84D0FEB18B227730020A0A3 /* ContaFaltasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContaFaltasViewController.m; sourceTree = "<group>"; };
+		C84D0FED18B227730020A0A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C84D0FF318B227740020A0A3 /* Contador de FaltasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contador de FaltasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84D0FF418B227740020A0A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C84D0FFC18B227740020A0A3 /* Contador de FaltasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Contador de FaltasTests-Info.plist"; sourceTree = "<group>"; };
+		C84D0FFE18B227740020A0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C84D100018B227740020A0A3 /* Contador_de_FaltasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contador_de_FaltasTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C84D0FCC18B227710020A0A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84D0FD518B227720020A0A3 /* CoreGraphics.framework in Frameworks */,
+				C84D0FD718B227720020A0A3 /* UIKit.framework in Frameworks */,
+				C84D0FD318B227720020A0A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84D0FF018B227740020A0A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84D0FF518B227740020A0A3 /* XCTest.framework in Frameworks */,
+				C84D0FF718B227740020A0A3 /* UIKit.framework in Frameworks */,
+				C84D0FF618B227740020A0A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C84D0FC618B227710020A0A3 = {
+			isa = PBXGroup;
+			children = (
+				C84D0FD818B227720020A0A3 /* Contador de Faltas */,
+				C84D0FFA18B227740020A0A3 /* Contador de FaltasTests */,
+				C84D0FD118B227720020A0A3 /* Frameworks */,
+				C84D0FD018B227720020A0A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C84D0FD018B227720020A0A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C84D0FCF18B227720020A0A3 /* Contador de Faltas.app */,
+				C84D0FF318B227740020A0A3 /* Contador de FaltasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C84D0FD118B227720020A0A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C84D0FD218B227720020A0A3 /* Foundation.framework */,
+				C84D0FD418B227720020A0A3 /* CoreGraphics.framework */,
+				C84D0FD618B227720020A0A3 /* UIKit.framework */,
+				C84D0FF418B227740020A0A3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C84D0FD818B227720020A0A3 /* Contador de Faltas */ = {
+			isa = PBXGroup;
+			children = (
+				C84D0FE118B227720020A0A3 /* ContaFaltasAppDelegate.h */,
+				C84D0FE218B227720020A0A3 /* ContaFaltasAppDelegate.m */,
+				C84D0FE418B227730020A0A3 /* Main_iPhone.storyboard */,
+				C84D0FE718B227730020A0A3 /* Main_iPad.storyboard */,
+				C84D0FEA18B227730020A0A3 /* ContaFaltasViewController.h */,
+				C84D0FEB18B227730020A0A3 /* ContaFaltasViewController.m */,
+				C84D0FED18B227730020A0A3 /* Images.xcassets */,
+				C84D0FD918B227720020A0A3 /* Supporting Files */,
+			);
+			path = "Contador de Faltas";
+			sourceTree = "<group>";
+		};
+		C84D0FD918B227720020A0A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C84D0FDA18B227720020A0A3 /* Contador de Faltas-Info.plist */,
+				C84D0FDB18B227720020A0A3 /* InfoPlist.strings */,
+				C84D0FDE18B227720020A0A3 /* main.m */,
+				C84D0FE018B227720020A0A3 /* Contador de Faltas-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C84D0FFA18B227740020A0A3 /* Contador de FaltasTests */ = {
+			isa = PBXGroup;
+			children = (
+				C84D100018B227740020A0A3 /* Contador_de_FaltasTests.m */,
+				C84D0FFB18B227740020A0A3 /* Supporting Files */,
+			);
+			path = "Contador de FaltasTests";
+			sourceTree = "<group>";
+		};
+		C84D0FFB18B227740020A0A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C84D0FFC18B227740020A0A3 /* Contador de FaltasTests-Info.plist */,
+				C84D0FFD18B227740020A0A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C84D0FCE18B227710020A0A3 /* Contador de Faltas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84D100418B227740020A0A3 /* Build configuration list for PBXNativeTarget "Contador de Faltas" */;
+			buildPhases = (
+				C84D0FCB18B227710020A0A3 /* Sources */,
+				C84D0FCC18B227710020A0A3 /* Frameworks */,
+				C84D0FCD18B227710020A0A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Contador de Faltas";
+			productName = "Contador de Faltas";
+			productReference = C84D0FCF18B227720020A0A3 /* Contador de Faltas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C84D0FF218B227740020A0A3 /* Contador de FaltasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84D100718B227740020A0A3 /* Build configuration list for PBXNativeTarget "Contador de FaltasTests" */;
+			buildPhases = (
+				C84D0FEF18B227740020A0A3 /* Sources */,
+				C84D0FF018B227740020A0A3 /* Frameworks */,
+				C84D0FF118B227740020A0A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C84D0FF918B227740020A0A3 /* PBXTargetDependency */,
+			);
+			name = "Contador de FaltasTests";
+			productName = "Contador de FaltasTests";
+			productReference = C84D0FF318B227740020A0A3 /* Contador de FaltasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C84D0FC718B227710020A0A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ContaFaltas;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Tilsix;
+				TargetAttributes = {
+					C84D0FF218B227740020A0A3 = {
+						TestTargetID = C84D0FCE18B227710020A0A3;
+					};
+				};
+			};
+			buildConfigurationList = C84D0FCA18B227710020A0A3 /* Build configuration list for PBXProject "Contador de Faltas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C84D0FC618B227710020A0A3;
+			productRefGroup = C84D0FD018B227720020A0A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C84D0FCE18B227710020A0A3 /* Contador de Faltas */,
+				C84D0FF218B227740020A0A3 /* Contador de FaltasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C84D0FCD18B227710020A0A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84D0FE918B227730020A0A3 /* Main_iPad.storyboard in Resources */,
+				C84D0FEE18B227730020A0A3 /* Images.xcassets in Resources */,
+				C84D0FE618B227730020A0A3 /* Main_iPhone.storyboard in Resources */,
+				C84D0FDD18B227720020A0A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84D0FF118B227740020A0A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84D0FFF18B227740020A0A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C84D0FCB18B227710020A0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84D0FDF18B227720020A0A3 /* main.m in Sources */,
+				C84D0FEC18B227730020A0A3 /* ContaFaltasViewController.m in Sources */,
+				C84D0FE318B227720020A0A3 /* ContaFaltasAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84D0FEF18B227740020A0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84D100118B227740020A0A3 /* Contador_de_FaltasTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C84D0FF918B227740020A0A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C84D0FCE18B227710020A0A3 /* Contador de Faltas */;
+			targetProxy = C84D0FF818B227740020A0A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C84D0FDB18B227720020A0A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84D0FDC18B227720020A0A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C84D0FE418B227730020A0A3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84D0FE518B227730020A0A3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C84D0FE718B227730020A0A3 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84D0FE818B227730020A0A3 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C84D0FFD18B227740020A0A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84D0FFE18B227740020A0A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C84D100218B227740020A0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C84D100318B227740020A0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C84D100518B227740020A0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Contador de Faltas/Contador de Faltas-Prefix.pch";
+				INFOPLIST_FILE = "Contador de Faltas/Contador de Faltas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C84D100618B227740020A0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Contador de Faltas/Contador de Faltas-Prefix.pch";
+				INFOPLIST_FILE = "Contador de Faltas/Contador de Faltas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C84D100818B227740020A0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Contador de Faltas.app/Contador de Faltas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Contador de Faltas/Contador de Faltas-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Contador de FaltasTests/Contador de FaltasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C84D100918B227740020A0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Contador de Faltas.app/Contador de Faltas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Contador de Faltas/Contador de Faltas-Prefix.pch";
+				INFOPLIST_FILE = "Contador de FaltasTests/Contador de FaltasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C84D0FCA18B227710020A0A3 /* Build configuration list for PBXProject "Contador de Faltas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84D100218B227740020A0A3 /* Debug */,
+				C84D100318B227740020A0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84D100418B227740020A0A3 /* Build configuration list for PBXNativeTarget "Contador de Faltas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84D100518B227740020A0A3 /* Debug */,
+				C84D100618B227740020A0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C84D100718B227740020A0A3 /* Build configuration list for PBXNativeTarget "Contador de FaltasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84D100818B227740020A0A3 /* Debug */,
+				C84D100918B227740020A0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C84D0FC718B227710020A0A3 /* Project object */;
+}
