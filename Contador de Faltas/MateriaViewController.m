@@ -13,6 +13,7 @@
 @interface MateriaViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *subject;
 @property (strong, nonatomic) IBOutlet UITextField *totalHours;
+@property (strong, nonatomic) IBOutlet UILabel *warning;
 
 @end
 
@@ -38,6 +39,7 @@
     [super viewDidLoad];
     //add function to dismiss keyboard on tab
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap)];
+    self.warning.alpha = 0;
     [self.view addGestureRecognizer:singleTap];
 }
 
@@ -47,6 +49,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)add {
+    self.warning.alpha = 0;
     NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
     NSMutableDictionary *classes= [[pref objectForKey:@"classes"] mutableCopy];
     if (!classes)
@@ -54,6 +57,7 @@
     if ([classes objectForKey:self.subject.text])
     {
         //IF SUBJECT ALREADY EXISTS
+        self.warning.alpha = 1;
     }
     else
     {

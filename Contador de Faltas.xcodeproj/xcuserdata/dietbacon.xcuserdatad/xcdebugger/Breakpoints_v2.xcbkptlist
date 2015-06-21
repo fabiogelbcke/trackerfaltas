@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Contador de Faltas/MateriaViewController.m"
-            timestampString = "456556350.635258"
+            timestampString = "456600447.674264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-add"
             landmarkType = "5">
          </BreakpointContent>

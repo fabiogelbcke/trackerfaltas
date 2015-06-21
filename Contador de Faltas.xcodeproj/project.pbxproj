@@ -14,7 +14,6 @@
 		C84D0FDF18B227720020A0A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D0FDE18B227720020A0A3 /* main.m */; };
 		C84D0FE318B227720020A0A3 /* ContaFaltasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D0FE218B227720020A0A3 /* ContaFaltasAppDelegate.m */; };
 		C84D0FE618B227730020A0A3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FE418B227730020A0A3 /* Main_iPhone.storyboard */; };
-		C84D0FE918B227730020A0A3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FE718B227730020A0A3 /* Main_iPad.storyboard */; };
 		C84D0FEC18B227730020A0A3 /* ContaFaltasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D0FEB18B227730020A0A3 /* ContaFaltasViewController.m */; };
 		C84D0FEE18B227730020A0A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FED18B227730020A0A3 /* Images.xcassets */; };
 		C84D0FF518B227740020A0A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FF418B227740020A0A3 /* XCTest.framework */; };
@@ -22,7 +21,6 @@
 		C84D0FF718B227740020A0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FD618B227720020A0A3 /* UIKit.framework */; };
 		C84D0FFF18B227740020A0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FFD18B227740020A0A3 /* InfoPlist.strings */; };
 		C84D100118B227740020A0A3 /* Contador_de_FaltasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D100018B227740020A0A3 /* Contador_de_FaltasTests.m */; };
-		C84D100B18B2289F0020A0A3 /* logo_ime.gif in Resources */ = {isa = PBXBuildFile; fileRef = C84D100A18B2289F0020A0A3 /* logo_ime.gif */; };
 		C84D100E18B231E60020A0A3 /* MateriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D100D18B231E60020A0A3 /* MateriaViewController.m */; };
 		C84D101118B231F20020A0A3 /* AdicionarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D101018B231F20020A0A3 /* AdicionarViewController.m */; };
 		C84D101418B2320B0020A0A3 /* ContaFaltasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D101318B2320B0020A0A3 /* ContaFaltasCell.m */; };
@@ -51,7 +49,6 @@
 		C84D0FE118B227720020A0A3 /* ContaFaltasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContaFaltasAppDelegate.h; sourceTree = "<group>"; };
 		C84D0FE218B227720020A0A3 /* ContaFaltasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContaFaltasAppDelegate.m; sourceTree = "<group>"; };
 		C84D0FE518B227730020A0A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		C84D0FE818B227730020A0A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		C84D0FEA18B227730020A0A3 /* ContaFaltasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContaFaltasViewController.h; sourceTree = "<group>"; };
 		C84D0FEB18B227730020A0A3 /* ContaFaltasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContaFaltasViewController.m; sourceTree = "<group>"; };
 		C84D0FED18B227730020A0A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -60,7 +57,6 @@
 		C84D0FFC18B227740020A0A3 /* Contador de FaltasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Contador de FaltasTests-Info.plist"; sourceTree = "<group>"; };
 		C84D0FFE18B227740020A0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84D100018B227740020A0A3 /* Contador_de_FaltasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contador_de_FaltasTests.m; sourceTree = "<group>"; };
-		C84D100A18B2289F0020A0A3 /* logo_ime.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo_ime.gif; sourceTree = "<group>"; };
 		C84D100C18B231E60020A0A3 /* MateriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MateriaViewController.h; sourceTree = "<group>"; };
 		C84D100D18B231E60020A0A3 /* MateriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MateriaViewController.m; sourceTree = "<group>"; };
 		C84D100F18B231F20020A0A3 /* AdicionarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdicionarViewController.h; sourceTree = "<group>"; };
@@ -102,7 +98,6 @@
 				C84D0FFA18B227740020A0A3 /* Contador de FaltasTests */,
 				C84D0FD118B227720020A0A3 /* Frameworks */,
 				C84D0FD018B227720020A0A3 /* Products */,
-				C84D100A18B2289F0020A0A3 /* logo_ime.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +127,6 @@
 				C84D0FE118B227720020A0A3 /* ContaFaltasAppDelegate.h */,
 				C84D0FE218B227720020A0A3 /* ContaFaltasAppDelegate.m */,
 				C84D0FE418B227730020A0A3 /* Main_iPhone.storyboard */,
-				C84D0FE718B227730020A0A3 /* Main_iPad.storyboard */,
 				C84D100C18B231E60020A0A3 /* MateriaViewController.h */,
 				C84D100D18B231E60020A0A3 /* MateriaViewController.m */,
 				C84D100F18B231F20020A0A3 /* AdicionarViewController.h */,
@@ -255,11 +249,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84D0FE918B227730020A0A3 /* Main_iPad.storyboard in Resources */,
 				C84D0FEE18B227730020A0A3 /* Images.xcassets in Resources */,
 				C84D0FE618B227730020A0A3 /* Main_iPhone.storyboard in Resources */,
 				C84D0FDD18B227720020A0A3 /* InfoPlist.strings in Resources */,
-				C84D100B18B2289F0020A0A3 /* logo_ime.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,14 +313,6 @@
 				C84D0FE518B227730020A0A3 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		C84D0FE718B227730020A0A3 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C84D0FE818B227730020A0A3 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		C84D0FFD18B227740020A0A3 /* InfoPlist.strings */ = {

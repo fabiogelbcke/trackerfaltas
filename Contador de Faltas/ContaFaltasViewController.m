@@ -90,7 +90,8 @@
         NSMutableDictionary *updatedSubjects = [self.classesDict mutableCopy];
         [updatedSubjects removeObjectForKey:[self.classesArray objectAtIndex:indexPath.row]];
         [pref setObject:updatedSubjects forKey:@"classes"];
-        [self updateLabels]; // tell table to refresh now
+        //refresh data accordingly
+        [self updateLabels];
     }
 }
 
@@ -133,10 +134,12 @@
     int totalPoints = 0;
     for (NSString *class in self.classesArray)
     {
+        // 3 points for unjustified, 1 point for justified
         totalPoints += [[self.classesDict objectForKey:class][0] intValue];
         totalPoints += 3 * [[self.classesDict objectForKey:class][1] intValue];
     }
     self.points.text = [NSString stringWithFormat:@"%d",totalPoints];
+    //text coloring to warn people when they are in danger :p
     if (totalPoints<60){
         self.points.textColor = [UIColor greenColor];
     }

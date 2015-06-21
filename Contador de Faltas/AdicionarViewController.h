@@ -19,7 +19,7 @@
 @interface AdicionarViewController : UIViewController
 
 @property (nonatomic, weak) id <AdicionarDelegate> delegate;
-@property (weak, nonatomic) IBOutlet UIPickerView *classPicker;
+@property (strong, nonatomic) IBOutlet UIPickerView *classPicker;
 @property NSNumber *numberOfElements;
 
 @end
