@@ -9,4 +9,4 @@ This tracker is to help people keep track of their points and %'s so they arent 
 
 It shows how many points you got, what % of classes have you missed relative to the total number of classes in the semester and how many abscenses are justified and how many are not (the 2 numbers below the %, the one on the left is justified the one on the right unjustified)
 
-![alt tag](http://oi59.tinypic.com/2vb0hth.jpg)
+![alt tag](http://oi57.tinypic.com/2cxj37m.jpg)
