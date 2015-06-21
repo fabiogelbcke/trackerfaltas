@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *nameOfClass;
 @property (strong, nonatomic) IBOutlet UILabel *percent;
+@property (strong, nonatomic) IBOutlet UILabel *absratio;
 
 
 @end

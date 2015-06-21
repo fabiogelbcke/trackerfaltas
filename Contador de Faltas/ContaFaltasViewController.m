@@ -15,9 +15,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *points;
 @property (strong, nonatomic) IBOutlet UITableView *classesTable;
 @property (strong, nonatomic) NSMutableArray *classesArray;
-@property (strong, nonatomic) NSMutableArray *justifiedArray;
-@property (strong, nonatomic) NSMutableArray *totalHoursArray;
-@property (strong, nonatomic) NSMutableArray *unjustifiedArray;
+@property (strong, nonatomic) NSDictionary *classesDict;
 
 @end
 
@@ -30,48 +28,42 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.classesArray = [[NSMutableArray alloc] init];
-    self.totalHoursArray = [[NSMutableArray alloc] init];
-    self.justifiedArray = [[NSMutableArray alloc] init];
-    self.unjustifiedArray = [[NSMutableArray alloc] init];
+    NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
+    //Dictionario com os cursos
+    NSMutableDictionary *classes= [[pref objectForKey:@"classes"] mutableCopy];
+    if (!classes)
+        classes = [[NSMutableDictionary alloc] init];
+    [pref setObject:classes forKey:@"classes"];
+    [pref synchronize];
+    self.classesArray = [[classes allKeys] mutableCopy];
+    self.classesDict = [classes mutableCopy];
     [self.classesTable reloadData];
-    prefs= [NSUserDefaults standardUserDefaults];
-    	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self updateLabels];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
     return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (!n) n=0;
-    return n;
-    
+    return self.classesArray.count;
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    NSLog([NSString stringWithFormat:@"para %ld : %@",(long)indexPath.row, [self.classesArray objectAtIndex:indexPath.row]]);
     static NSString *CellIdentifier= @"Cell";
-    
     ContaFaltasCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
         cell = [[ContaFaltasCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
     cell.nameOfClass.text = [self.classesArray objectAtIndex:indexPath.row];
-    if ([[self.totalHoursArray objectAtIndex:indexPath.row] intValue]==0){
+    int totalClasses = [[self.classesDict objectForKey:[self.classesArray objectAtIndex:indexPath.row]][2] intValue];
+    int just = [[self.classesDict objectForKey:[self.classesArray objectAtIndex:indexPath.row]][0] intValue];
+    int unjust = [[self.classesDict objectForKey:[self.classesArray objectAtIndex:indexPath.row]][1] intValue];
+    if (totalClasses == 0){
         cell.percent.text = @"-";
     }
     else{
-        int percentage = ([(NSString *)[self.unjustifiedArray objectAtIndex:indexPath.row] intValue] + [(NSString *)[self.justifiedArray objectAtIndex:indexPath.row] intValue])/[(NSString *)[self.totalHoursArray objectAtIndex:indexPath.row] intValue];
+        int percentage = (100.0 * (just + unjust)) / totalClasses;
         cell.percent.text = [NSString stringWithFormat:@"%d%%",percentage];
         if(percentage<50){
             cell.percent.textColor = [UIColor greenColor];
@@ -83,32 +75,27 @@
             cell.percent.textColor = [UIColor redColor];
         }
     }
+    cell.absratio.text = [NSString stringWithFormat:@"%d/%d",just,unjust];
 
     return cell;
 }
-- (void)addItemViewController:(MateriaViewController *)controller didFinishEntering:(NSString *)Class withHours:(int)hours{
-    if (!n) n=0;
-    n++;
 
-    [self.classesArray addObject:Class];
-    [self.totalHoursArray addObject:[NSString stringWithFormat:@"%d",hours]];
-    [self.unjustifiedArray addObject:@"0"];
-    [self.justifiedArray addObject:@"0"];
-    [self updateLabels];
-    
-    
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
 }
 
--(void)AddViewController:(AdicionarViewController *)viewController JustifiedAbsences:(int)ja andUnjustified:(int)ua forClass:(NSInteger)class{
-    
-    ContaFaltasCell *cell = (ContaFaltasCell *)[self.classesTable cellForRowAtIndexPath:[NSIndexPath indexPathForItem:class inSection:0]];
-    int unjustified = [(NSString*)[self.unjustifiedArray objectAtIndex:class] intValue]+ ua;
-    int justified = [(NSString *)[self.justifiedArray objectAtIndex:class]intValue] + ja;
-    [self.justifiedArray replaceObjectAtIndex:class withObject:[NSString stringWithFormat:@"%d",justified]];
-    [self.unjustifiedArray replaceObjectAtIndex:class withObject:[NSString stringWithFormat:@"%d",unjustified]];
-    [self updateLabels];
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
+        NSMutableDictionary *updatedSubjects = [self.classesDict mutableCopy];
+        [updatedSubjects removeObjectForKey:[self.classesArray objectAtIndex:indexPath.row]];
+        [pref setObject:updatedSubjects forKey:@"classes"];
+        [self updateLabels]; // tell table to refresh now
+    }
 }
+
 - (IBAction)add:(UIBarButtonItem *)sender {
+    //Load and show screen to add abscences
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     AdicionarViewController *addController = (AdicionarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"Add"];
     addController.delegate=self;
@@ -120,7 +107,6 @@
     }
     addController.classPicker = [[UIPickerView alloc] init];
     addController.numberOfElements = [NSNumber numberWithInt:n];
-    [addController.classPicker setValuesForKeysWithDictionary:[NSDictionary dictionaryWithObjects:self.classesArray forKeys:numberArray]];
     [self presentViewController:addController animated:YES completion:nil];
 
     
@@ -139,12 +125,16 @@
 }
 
 -(void)updateLabels{
-    
+    NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
+    //Dictionario com os cursos
+    NSMutableDictionary *classes= [[pref objectForKey:@"classes"] mutableCopy];
+    self.classesArray = [[classes allKeys] mutableCopy];
+    self.classesDict = [classes mutableCopy];
     int totalPoints = 0;
-    int i;
-    for (i=0; i<[self.unjustifiedArray count]; i++){
-        totalPoints+=3*[[self.unjustifiedArray objectAtIndex:i] intValue];
-        totalPoints+=[[self.justifiedArray objectAtIndex:i] intValue];
+    for (NSString *class in self.classesArray)
+    {
+        totalPoints += [[self.classesDict objectForKey:class][0] intValue];
+        totalPoints += 3 * [[self.classesDict objectForKey:class][1] intValue];
     }
     self.points.text = [NSString stringWithFormat:@"%d",totalPoints];
     if (totalPoints<60){
@@ -156,6 +146,7 @@
     else {
         self.points.textColor = [UIColor redColor];
     }
+    //update table
     [self.classesTable reloadData];
     
 }

@@ -11,7 +11,8 @@
 @class MateriaViewController;
 
 @protocol MateriaViewControllerDelegate <NSObject>
-- (void)addItemViewController:(MateriaViewController *)controller didFinishEntering:(NSString*) Class withHours:(int)hours;
+@required
+- (void)updateLabels;
 @end
 
 @interface MateriaViewController : UIViewController

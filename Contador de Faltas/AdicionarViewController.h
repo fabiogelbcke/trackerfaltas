@@ -12,7 +12,7 @@
 
 @protocol AdicionarDelegate <NSObject, UIPickerViewDelegate>
 
--(void)AddViewController: (AdicionarViewController *)viewController JustifiedAbsences: (int)ja andUnjustified: (int)ua forClass:(NSInteger)class;
+- (void)updateLabels;
 
 @end
 
