@@ -1,6 +1,8 @@
 # trackerfaltas
-IME's attendance policy is really fucking annoying, >120 points and you're out
+IME's attendance policy is really freaking annoying. Go >120 points and you're out
+
 Every unjustified abscence costs you 3 points and every justified abscence costs 1
+
 If that wasn't enough, you can't miss more than 25% of any given class in a semester
 
 This tracker is to help people keep track of their points and %'s so they arent desperate by the end of the semester.
