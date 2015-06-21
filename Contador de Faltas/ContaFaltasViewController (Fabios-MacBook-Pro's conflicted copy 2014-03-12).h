@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MateriaViewController.h"
-#import "AdicionarViewController.h"
 
-@interface ContaFaltasViewController : UIViewController <MateriaViewControllerDelegate, AdicionarDelegate>
+@interface ContaFaltasViewController : UIViewController
 
 @end

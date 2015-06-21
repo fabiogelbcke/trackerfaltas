@@ -22,11 +22,6 @@
 		C84D0FF718B227740020A0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84D0FD618B227720020A0A3 /* UIKit.framework */; };
 		C84D0FFF18B227740020A0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84D0FFD18B227740020A0A3 /* InfoPlist.strings */; };
 		C84D100118B227740020A0A3 /* Contador_de_FaltasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D100018B227740020A0A3 /* Contador_de_FaltasTests.m */; };
-		C84D100B18B2289F0020A0A3 /* logo_ime.gif in Resources */ = {isa = PBXBuildFile; fileRef = C84D100A18B2289F0020A0A3 /* logo_ime.gif */; };
-		C84D100E18B231E60020A0A3 /* MateriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D100D18B231E60020A0A3 /* MateriaViewController.m */; };
-		C84D101118B231F20020A0A3 /* AdicionarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D101018B231F20020A0A3 /* AdicionarViewController.m */; };
-		C84D101418B2320B0020A0A3 /* ContaFaltasCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D101318B2320B0020A0A3 /* ContaFaltasCell.m */; };
-		C84D101718B2362B0020A0A3 /* EditFaltasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D101618B2362B0020A0A3 /* EditFaltasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,15 +55,6 @@
 		C84D0FFC18B227740020A0A3 /* Contador de FaltasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Contador de FaltasTests-Info.plist"; sourceTree = "<group>"; };
 		C84D0FFE18B227740020A0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84D100018B227740020A0A3 /* Contador_de_FaltasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contador_de_FaltasTests.m; sourceTree = "<group>"; };
-		C84D100A18B2289F0020A0A3 /* logo_ime.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo_ime.gif; sourceTree = "<group>"; };
-		C84D100C18B231E60020A0A3 /* MateriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MateriaViewController.h; sourceTree = "<group>"; };
-		C84D100D18B231E60020A0A3 /* MateriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MateriaViewController.m; sourceTree = "<group>"; };
-		C84D100F18B231F20020A0A3 /* AdicionarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdicionarViewController.h; sourceTree = "<group>"; };
-		C84D101018B231F20020A0A3 /* AdicionarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdicionarViewController.m; sourceTree = "<group>"; };
-		C84D101218B2320B0020A0A3 /* ContaFaltasCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContaFaltasCell.h; sourceTree = "<group>"; };
-		C84D101318B2320B0020A0A3 /* ContaFaltasCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContaFaltasCell.m; sourceTree = "<group>"; };
-		C84D101518B2362B0020A0A3 /* EditFaltasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFaltasViewController.h; sourceTree = "<group>"; };
-		C84D101618B2362B0020A0A3 /* EditFaltasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFaltasViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +88,6 @@
 				C84D0FFA18B227740020A0A3 /* Contador de FaltasTests */,
 				C84D0FD118B227720020A0A3 /* Frameworks */,
 				C84D0FD018B227720020A0A3 /* Products */,
-				C84D100A18B2289F0020A0A3 /* logo_ime.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,14 +118,6 @@
 				C84D0FE218B227720020A0A3 /* ContaFaltasAppDelegate.m */,
 				C84D0FE418B227730020A0A3 /* Main_iPhone.storyboard */,
 				C84D0FE718B227730020A0A3 /* Main_iPad.storyboard */,
-				C84D100C18B231E60020A0A3 /* MateriaViewController.h */,
-				C84D100D18B231E60020A0A3 /* MateriaViewController.m */,
-				C84D100F18B231F20020A0A3 /* AdicionarViewController.h */,
-				C84D101018B231F20020A0A3 /* AdicionarViewController.m */,
-				C84D101218B2320B0020A0A3 /* ContaFaltasCell.h */,
-				C84D101318B2320B0020A0A3 /* ContaFaltasCell.m */,
-				C84D101518B2362B0020A0A3 /* EditFaltasViewController.h */,
-				C84D101618B2362B0020A0A3 /* EditFaltasViewController.m */,
 				C84D0FEA18B227730020A0A3 /* ContaFaltasViewController.h */,
 				C84D0FEB18B227730020A0A3 /* ContaFaltasViewController.m */,
 				C84D0FED18B227730020A0A3 /* Images.xcassets */,
@@ -259,7 +236,6 @@
 				C84D0FEE18B227730020A0A3 /* Images.xcassets in Resources */,
 				C84D0FE618B227730020A0A3 /* Main_iPhone.storyboard in Resources */,
 				C84D0FDD18B227720020A0A3 /* InfoPlist.strings in Resources */,
-				C84D100B18B2289F0020A0A3 /* logo_ime.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84D101718B2362B0020A0A3 /* EditFaltasViewController.m in Sources */,
-				C84D101118B231F20020A0A3 /* AdicionarViewController.m in Sources */,
-				C84D100E18B231E60020A0A3 /* MateriaViewController.m in Sources */,
 				C84D0FDF18B227720020A0A3 /* main.m in Sources */,
 				C84D0FEC18B227730020A0A3 /* ContaFaltasViewController.m in Sources */,
-				C84D101418B2320B0020A0A3 /* ContaFaltasCell.m in Sources */,
 				C84D0FE318B227720020A0A3 /* ContaFaltasAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
