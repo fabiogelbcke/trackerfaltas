@@ -65,10 +65,10 @@
     else{
         int percentage = (100.0 * (just + unjust)) / totalClasses;
         cell.percent.text = [NSString stringWithFormat:@"%d%%",percentage];
-        if(percentage<50){
+        if(percentage<=10){
             cell.percent.textColor = [UIColor greenColor];
         }
-        else if (percentage<75){
+        else if (percentage<=20){
             cell.percent.textColor = [UIColor yellowColor];
         }
         else{
